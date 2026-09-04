@@ -569,10 +569,6 @@ class PlanSolveAgent(Agent):
         new_context: Optional[str] = None
     ) -> str:
         """构建断点恢复提示段
-
-        参考 Claude Code 的 Plan Recovery System Prompt：
-        明确告知模型已完成步骤、被中断步骤、待执行步骤，
-        并要求先核验环境落盘状态再继续执行。
         """
         # 已完成步骤
         completed_lines = []
